@@ -19,7 +19,7 @@ DEVICE = torch.device('cuda' if torch.cuda.is_available() else 'cpu')
 # DEVICE = 'cpu'
 sam.to(device=DEVICE)
 
-IMAGE_PATH = "../image_data/dog.jpeg"
+IMAGE_PATH = "../image_data/teisyoku.png"
 image_bgr = cv2.imread(IMAGE_PATH)
 image_rgb = cv2.cvtColor(image_bgr, cv2.COLOR_BGR2RGB)
 h,w,_ = image_rgb.shape
